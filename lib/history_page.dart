@@ -7,21 +7,15 @@ class HistoryPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Conversion History',
-          style: TextStyle(
-            color: Colors.white, // White text color
-            fontSize: 24,
-          ),
-        ),
-        backgroundColor: Colors.pink, // AppBar background color is pink
+        title: Text('Conversion History'),
+        backgroundColor: Colors.pink,
         centerTitle: true,
       ),
       body: history.isEmpty
           ? Center(
               child: Text(
                 'No conversion history yet',
-                style: TextStyle(fontSize: 18, color: Colors.pink), // Text color is pink
+                style: TextStyle(fontSize: 18, color: Colors.pink),
               ),
             )
           : ListView.builder(
@@ -31,10 +25,10 @@ class HistoryPage extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                   elevation: 3,
                   child: ListTile(
-                    leading: Icon(Icons.history, color: Colors.pink), // Icon color is pink
+                    leading: Icon(Icons.history, color: Colors.pink),
                     title: Text(
                       history[index],
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.pink), // Text color is pink
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.pink),
                     ),
                   ),
                 );

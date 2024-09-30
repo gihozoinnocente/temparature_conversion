@@ -10,11 +10,10 @@ class TemperatureConverterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,  // Removes debug banner
+      debugShowCheckedModeBanner: false,
       title: 'Temperature Converter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        // Removed Google Fonts
       ),
       home: HomePage(),
       routes: {
